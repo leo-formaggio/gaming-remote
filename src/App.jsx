@@ -1,12 +1,11 @@
-import { Body } from './components/Body'
-import { Header } from './components/Header'
+import { Categories } from './components/Categories'
+import { NavBar } from './components/Navigation'
 
 export function App() {
-
   return (
 		<>
-			<Header />
-			<Body />
+			<NavBar />
+			<Categories />
 		</>
 	)
 }
