@@ -38,6 +38,11 @@ export const CategoryContent = styled.div`
 	opacity: 0.6;
 	position: absolute;
 
+	&:hover {
+		transform: scale(1.1);
+		transition: transform 0.7s;
+	}
+
 	h2 {
 		font-weight: bold;
 		margin: 0 6px 0;

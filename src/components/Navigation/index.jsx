@@ -1,22 +1,27 @@
 import * as Style from './style'
 import IMGLogo from '../../assets/img/logo for Gaming Remote brand with elements of a video game controller and antenna or satellite.png'
-import shoppingCart from '../../assets/img/shopping-cart.svg'
 import { toast } from 'react-toastify'
+import { Link, Outlet } from 'react-router-dom'
+import { CartIcon } from '../CartIcon'
 
 export function NavBar() {
 	return (
-
+		<>
 			<Style.NavBar>
+				<Style.LogoContainer to="/">
 					<img src={IMGLogo} />
 					<h1>Gaming Remote</h1>
+				</Style.LogoContainer>
 				<Style.LinkNavigation>
-					<a>SHOP</a>
-					<a>LOGIN</a>
+					<Link to="shop">SHOP</Link>
+					<Link to="auth">LOGIN</Link>
 				</Style.LinkNavigation>
 				<div>
-					<img onClick={ItemListContainer} className='shopping-cart' src={shoppingCart} />
+					<CartIcon />
 				</div>
 			</Style.NavBar>
+			<Outlet />
+		</>
 	)
 }
 

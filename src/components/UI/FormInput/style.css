@@ -1,0 +1,27 @@
+.group {
+	position: relative;
+	margin: 45px;
+
+	.form-input {
+		background: none;
+		background-color: white;
+		color: #c3c3c3;
+		font-size: 18px;
+		padding: 10px 5px;
+		display: block;
+		width: 100%;
+		border: none;
+		border-radius: 0;
+		border-bottom: 1px solid #6f6f6f;
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	.form-input-label {
+		color: #4c4b4b;
+		font-size: 16px;
+		font-weight: normal;
+	}
+}

@@ -1,13 +1,17 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 export const NavBar = styled.div`
 	height: 80px;
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
-	margin: 50px auto;
 	align-items: center;
 	background-color: ${(props) => props.theme.colors.primary};
+
+	div {
+
+	}
 
 	h1 {
 		color: ${(props) => props.theme.colors.gray};
@@ -22,6 +26,12 @@ export const NavBar = styled.div`
 		cursor: pointer;
 	}
 `
+
+	export const LogoContainer = styled(Link)`
+		display: flex;
+		align-items: center;
+		gap: 15px;
+	`
 
 export const LinkNavigation = styled.div`
 	width: 50%;

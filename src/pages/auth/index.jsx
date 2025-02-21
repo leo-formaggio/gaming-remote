@@ -1,5 +1,12 @@
-import { SignUp } from "../../components/SignUp";
+import { SignIn } from "../../components/SignIn"
+import { SignUp } from "../../components/SignUp"
+import './style.css'
 
 export function Auth() {
-	return <SignUp />
+	return (
+		<div className="auth-container">
+			<SignUp />
+			<SignIn />
+		</div>
+	)
 }
