@@ -19,6 +19,7 @@ export const ImageBackgroud = styled.div`
 	background-size: cover;
 	background-position: center;
 	transition: transform 0.7s;
+	border-radius: 12px;
 
 	&:hover {
 		transform: scale(1.1);
@@ -34,6 +35,7 @@ export const CategoryContent = styled.div`
 	align-items: center;
 	justify-content: center;
 	border: 1px solid ${(props) => props.theme.colors.black};
+	border-radius: 12px;
 	background-color: ${(props) => props.theme.colors.white};
 	opacity: 0.6;
 	position: absolute;

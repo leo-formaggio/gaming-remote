@@ -1,6 +1,11 @@
 import { useState } from 'react'
 import { FormInput } from '../UI/FormInput/index'
 import './style.css'
+import {
+	signInAuthUserWithEmailPassoword,
+	signInWithGooglePopup
+} from '../../utils/firebase'
+import { toast } from 'react-toastify'
 
 const defaultFormFields = {
 	email:'',
@@ -17,9 +22,23 @@ export function SignIn() {
 		setFormFields({ ...formFields, [name]: value })
 	}
 
-	const handleSubmit = (event) => {
+	const handleSubmit = async (event) => {
 		event.preventDefault()
+
+		try {
+			const { user } = await signInAuthUserWithEmailPassoword(email, password)
+			toast.success('Login efetuado com sucesso!')
+		} catch (error) {
+			if (error.code === 'auth/invalid-credential') {
+				toast.error('E-mail ou senha inválidos.')
+			}
+		}
+
 		resetFormFields()
+	}
+
+	const signInWithGoogle = async () => {
+		await signInWithGooglePopup()
 	}
 
 	const resetFormFields = () => {
@@ -52,7 +71,7 @@ export function SignIn() {
 
 				<div className='buttons-container-sign-in'>
 					<button className='button-login' type='submit'>Login</button>
-					<button className='button-login-google'>Login com Google</button>
+					<button className='button-login-google' type='button' onClick={signInWithGoogle}>Login com Google</button>
 				</div>
 			</form>
 		</div>

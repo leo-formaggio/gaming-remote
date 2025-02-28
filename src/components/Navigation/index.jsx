@@ -3,8 +3,14 @@ import IMGLogo from '../../assets/img/logo for Gaming Remote brand with elements
 import { toast } from 'react-toastify'
 import { Link, Outlet } from 'react-router-dom'
 import { CartIcon } from '../CartIcon'
+import { useContext } from 'react'
+import { UserContext } from '../../context/userContext'
+import { singOutAuthUser } from '../../utils/firebase'
 
 export function NavBar() {
+
+	const { currentUser } = useContext(UserContext)
+
 	return (
 		<>
 			<Style.NavBar>
@@ -14,7 +20,7 @@ export function NavBar() {
 				</Style.LogoContainer>
 				<Style.LinkNavigation>
 					<Link to="shop">SHOP</Link>
-					<Link to="auth">LOGIN</Link>
+					{currentUser ? <Link onClick={singOutAuthUser} >LOGOUT</Link> : <Link to="auth">LOGIN</Link>}
 				</Style.LinkNavigation>
 				<div>
 					<CartIcon />

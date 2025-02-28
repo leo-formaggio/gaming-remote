@@ -6,6 +6,8 @@ import { GlobalStyle } from './style/global.js'
 import { defaultTheme } from './style/theme/default.js'
 import { ToastContainer } from 'react-toastify'
 import { BrowserRouter } from 'react-router-dom'
+import { UserProvider } from './context/userContext.jsx'
+import { CategoriesProvider } from './context/categoriesContext.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -13,7 +15,11 @@ createRoot(document.getElementById('root')).render(
 			<ThemeProvider theme={defaultTheme}>
 				<GlobalStyle />
 				<ToastContainer />
-    		<App />
+				<UserProvider>
+					<CategoriesProvider>
+    				<App />
+					</CategoriesProvider>
+					</UserProvider>
 			</ThemeProvider>
 		</BrowserRouter>
   </StrictMode>

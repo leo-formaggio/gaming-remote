@@ -20,11 +20,6 @@ export const NavBar = styled.div`
 	img {
 		width: 80px;
 	}
-
-	.shopping-cart {
-		width: 40px;
-		cursor: pointer;
-	}
 `
 
 	export const LogoContainer = styled(Link)`
@@ -43,4 +38,8 @@ export const LinkNavigation = styled.div`
 	a {
 		cursor: pointer;
 	}
+`
+
+export const CartIcon = styled.div`
+	width: 30px;
 `

@@ -1,3 +1,10 @@
+import { Route, Routes } from 'react-router-dom'
+import { CategoriesPreview } from '../../components/CategoriesPreview'
+
 export function Shop() {
-	return <h2>Shop</h2>
+	return (
+		<Routes>
+			<Route index element={<CategoriesPreview />} />
+		</Routes>
+	)
 }
