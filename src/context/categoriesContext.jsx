@@ -10,6 +10,7 @@ export const CategoriesProvider = ({ children }) => {
 
 	useEffect(() => {
 		const getCategories = async () => {
+			console.log('Estou aqui')
 			const categoryMap = await getCategoriesCollection()
 			setCategoriesMap(categoryMap)
 		}

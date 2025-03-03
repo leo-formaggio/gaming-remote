@@ -1,23 +1,17 @@
-.shopping-container {
-
-}
-
 .image-icon img {
 	width: 30px;
 }
 
-
 .button-item {
 
-	button {
-		width: 40px;
-		height: 20px;
-
-	}
-
 	span {
+
 		border: 1px solid black;
 		padding: 0 15px;
-		background-color: white;
+	}
+
+	button {
+		width: 70px;
+		height: 40px;
 	}
 }

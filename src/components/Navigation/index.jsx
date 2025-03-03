@@ -1,6 +1,5 @@
 import * as Style from './style'
 import IMGLogo from '../../assets/img/logo for Gaming Remote brand with elements of a video game controller and antenna or satellite.png'
-import { toast } from 'react-toastify'
 import { Link, Outlet } from 'react-router-dom'
 import { CartIcon } from '../CartIcon'
 import { useContext } from 'react'
@@ -20,7 +19,7 @@ export function NavBar() {
 				</Style.LogoContainer>
 				<Style.LinkNavigation>
 					<Link to="shop">SHOP</Link>
-					{currentUser ? <Link onClick={singOutAuthUser} >LOGOUT</Link> : <Link to="auth">LOGIN</Link>}
+					{currentUser ? ( <Link onClick={singOutAuthUser}>LOGOUT</Link> ) : ( <Link to="auth">LOGIN</Link> )}
 				</Style.LinkNavigation>
 				<div>
 					<CartIcon />
@@ -30,9 +29,3 @@ export function NavBar() {
 		</>
 	)
 }
-
-function ItemListContainer() {
-	return toast.warn("Confira nossas ofertas!")
-}
-
-ItemListContainer()
