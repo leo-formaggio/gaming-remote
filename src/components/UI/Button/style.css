@@ -1,4 +1,19 @@
 button {
+	width: auto;
+	height: 50px;
+	letter-spacing: 0.5px;
+
+	font-size: 15px;
+	background-color: black;
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
 	&.inverted {
 		background-color: white;
 		color: black;

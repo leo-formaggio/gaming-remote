@@ -5,8 +5,12 @@ import { CartIcon } from '../CartIcon'
 import { useContext } from 'react'
 import { UserContext } from '../../context/userContext'
 import { singOutAuthUser } from '../../utils/firebase'
+import { CartContext } from '../../context/cartContext'
+import { CartDropdown } from '../CartDropDown'
 
 export function NavBar() {
+
+	const { isCartOpen } = useContext(CartContext)
 
 	const { currentUser } = useContext(UserContext)
 
@@ -23,6 +27,7 @@ export function NavBar() {
 				</Style.LinkNavigation>
 				<div>
 					<CartIcon />
+					{ isCartOpen && <CartDropdown /> }
 				</div>
 			</Style.NavBar>
 			<Outlet />

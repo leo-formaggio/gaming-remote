@@ -6,7 +6,6 @@ import {
 	createAuthUserWithEmailPassword,
 	createUserDocumentFromAuth
 } from "../../utils/firebase"
-import { Button } from '../UI/Button'
 
 const defaultFormFields ={
 	name:'',
@@ -85,9 +84,9 @@ export function SignUp() {
 					name="confirmPassword"
 					onChange={handleChange}
 				/>
-				<Button className="button-login" type="submit">
+				<button className="button-login" type="submit">
 					Criar Conta
-				</Button>
+				</button>
 			</form>
 		</div>
 	)
