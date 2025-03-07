@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 export const NavBar = styled.div`
-	height: 80px;
+	height: 90px;
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
@@ -18,7 +18,7 @@ export const NavBar = styled.div`
 	}
 
 	img {
-		width: 80px;
+		width: 90px;
 	}
 `
 
