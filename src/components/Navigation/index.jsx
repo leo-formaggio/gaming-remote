@@ -6,7 +6,7 @@ import { useContext } from 'react'
 import { UserContext } from '../../context/userContext'
 import { singOutAuthUser } from '../../utils/firebase'
 import { CartContext } from '../../context/cartContext'
-import { CartDropdown } from '../CartDropDown'
+import { CartDropdown } from '../CartDropdown'
 
 export function NavBar() {
 
