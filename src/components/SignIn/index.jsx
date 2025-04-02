@@ -26,7 +26,7 @@ export function SignIn() {
 		event.preventDefault()
 
 		try {
-			const { user } = await signInAuthUserWithEmailPassoword(email, password)
+			await signInAuthUserWithEmailPassoword(email, password)
 			toast.success('Login efetuado com sucesso!')
 		} catch (error) {
 			if (error.code === 'auth/invalid-credential') {

@@ -1,3 +1,23 @@
 .container-home {
 	display: flex;
 }
+
+.footer-text {
+	display: flex;
+	margin: auto;
+	margin-top: 50px;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer-text h3 {
+	font-family: "Tektur", sans-serif;
+	letter-spacing: 1.7px;
+	text-transform: uppercase;
+	color: #3997f5;
+}
+
+.footer-text:hover h3 {
+	color: #95c8fa;
+	transition: ease-out 0.3s;
+}

@@ -30,7 +30,7 @@ export function Checkout() {
 				cartItems.map((item) => (
 					<CheckoutItem item={item} key={item.id} />
 				))}
-			<span>Total: R${cartTotal}</span>
+			<span className="total">Total: R$ {cartTotal}</span>
 		</div>
 	)
 }

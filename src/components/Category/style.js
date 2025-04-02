@@ -13,7 +13,7 @@ export const CategoryContainer = styled.div`
 	}
 `
 
-export const ImageBackgroud = styled.div`
+export const ImageBackground = styled.div`
 	width: 100%;
 	height: 100%;
 	background-size: cover;
