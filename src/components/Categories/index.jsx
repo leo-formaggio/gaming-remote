@@ -26,10 +26,15 @@ const categories = [
 
 export function Categories() {
 	return (
+		<>
 		<div className="container-home">
 			{categories.map((category) => {
 				return <Category category={category} key={category.title} />
 			})}
 		</div>
+		<div className='footer-text'>
+			<h3>Gaming Remote - A sua loja Gamer</h3>
+		</div>
+		</>
 	)
 }

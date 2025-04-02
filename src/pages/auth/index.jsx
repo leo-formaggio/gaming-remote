@@ -4,9 +4,11 @@ import './style.css'
 
 export function Auth() {
 	return (
-		<div className="auth-container">
-			<SignUp />
-			<SignIn />
+		<div className="image-container">
+			<div className="auth-container">
+				<SignUp />
+				<SignIn />
+			</div>
 		</div>
 	)
 }

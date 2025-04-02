@@ -1,14 +1,15 @@
 import * as Style from './style'
+import { Link } from 'react-router-dom'
 
 export function Category({ category }) {
 	const { title, imageUrl } = category
 
 	return (
 		<Style.CategoryContainer>
-			<Style.ImageBackgroud style={{ backgroundImage: `url(${imageUrl})` }} />
+			<Style.ImageBackground style={{ backgroundImage: `url(${imageUrl})` }} />
 			<Style.CategoryContent>
 				<h2>{title}</h2>
-				<p>Ver mais</p>
+				<Link to="shop">Ver mais</Link>
 			</Style.CategoryContent>
 		</Style.CategoryContainer>
 	)

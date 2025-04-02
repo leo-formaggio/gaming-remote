@@ -4,7 +4,7 @@
 	width: 380px;
 
 	h2 {
-		margin: 10px 0;
+		margin: 40px 0;
 	}
 
 	.buttons-container-sign-in {
@@ -39,8 +39,9 @@
 	color: white;
 
 	&:hover {
-		border: none;
+		border: 1px solid #2d6dd4;
 		cursor: pointer;
-		background-color: #2d6dd4;
+		background-color: white;
+		color: #2d6dd4;
 	}
 }

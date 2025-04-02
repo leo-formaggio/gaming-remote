@@ -1,6 +1,13 @@
+.image-container {
+	background: url("../../assets/img/photo-1636922861058-ac8d49cb5147.png") no-repeat right;
+	background-size: 500px;
+	border-bottom: dotted;
+}
+
 .auth-container {
 	display: flex;
 	width: 900px;
 	justify-content: space-between;
-	margin: 30px auto;
+	margin: auto;
+	overflow: hidden;
 }
