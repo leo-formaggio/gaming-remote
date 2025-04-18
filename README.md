@@ -1,8 +1,41 @@
-# React + Vite
+# Gaming Remote
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ Projeto elaborado na aulas de React JS da Coderhouse, com algumas tecnologias como React, Vite e Firebase. **Gaming Remote** é um e-commerce gaming, com página de registro, login, sessões com os itens a venda e carrinho de compras, informando detalhes como quantidade dos itens, subtotal e total da compra.
+ 
+ O uso do React traz consigo dinamismo, performance e uma ótima usabilidade para o usuário, Neste projeto foi utilizado o uso de contexto, trazendo facilidades e praticidades em seu uso.
 
-Currently, two official plugins are available:
+ O Firebase tem a função de auxiliar nossa aplicação com o autenticador de login e banco de dados, fornecendo toda a estrutura nos bastidores.
+ 
+## 🛠 Habilidades Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ * React + Vite
+ * Firebase
+ * Git / Github
+ * Vercel
+
+## Referências
+
+ - [MDN](https://developer.mozilla.org/pt-BR/)
+ - [Readme.so](https://readme.so/pt)
+ - Aulas de React JS pela [Coderhouse](https://www.coderhouse.com/)
+
+## 🚀 Sobre mim
+ Sou estudante em: 
+  - Desenvolvimento Fullstack pela [Coderhouse](https://www.coderhouse.com/);
+  - Engenharia de Software pela [Estácio](https://estacio.br/).
+Meu contato no [LinkedIn](https://www.linkedin.com/in/leonardoformaggio/).
+## Documentação
+
+ Para saber mais sobre o uso do **React** e **Firebase** acesse:
+
+ * [React](https://react.dev/)
+
+ * [Firebase](https://firebase.google.com/?hl=pt-br)
+
+ ## Imagens da Aplicação
+
+ ### Tela Home
+ <img src="./assets/img/gaming-remote01" />
+
+ ### Tela de Login
+ <img src="./assets/img/gaming-remote02" />
