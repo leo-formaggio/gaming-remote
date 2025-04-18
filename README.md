@@ -35,7 +35,7 @@ Meu contato no [LinkedIn](https://www.linkedin.com/in/leonardoformaggio/).
  ## Imagens da Aplicação
 
  ### Tela Home
- <img src="./src/assets/img/gaming-remote01" />
+ <img src="./src/assets/img/gaming-remote01.png" />
 
  ### Tela de Login
- <img src="./src/assets/img/gaming-remote02" />
+ <img src="./src/assets/img/gaming-remote02.png" />
